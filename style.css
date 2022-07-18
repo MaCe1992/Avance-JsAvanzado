@@ -10,13 +10,8 @@ p{
     color: black;
 }
 /* ------------- logo --------------*/
-.logoNav{
-    width: 110px;
-    height: 90px;
-    padding-left: 50px;
-    margin-top: 15px;
-}
-.recAzul, .trapAzul{
+
+#recAzul, #trapAzul{
     background-color: rgb(63,103,151);
     width: 60px;
     height: 35px; 
@@ -24,28 +19,24 @@ p{
     display: flex;
     justify-content: center;
 }
-.recCeleste, .trapCeleste{
+#recCeleste, #trapCeleste{
     background-color: rgb(177,213,228);
     width: 50px;
     height: 25px; 
     border-radius: 5px;
     margin: auto;
 }
-.trapAzul{
-    height: 30px; 
-    transform: perspective(30px) rotatex(50deg);
+#trapAzul{
+    transform: perspective(30px);
 }
-.trapCeleste{
-    width: 45px;
-    height: 20px; 
-    margin-top: 7px;
-    transform: perspective(90px) rotatex(32deg);
+#trapCeleste{ 
+    transform: perspective(90px);
 }
 
 /* -------------- Animacion logo ------------------*/
 
-.recAzul, .trapAzul{
-    animation: azul 3s ease;
+#recAzul, #trapAzul{
+    animation: azul 2s ease-in;
     animation-iteration-count:1;
 }
 @keyframes azul{
@@ -63,8 +54,8 @@ p{
     opacity:1;}
 }
 
-.recCeleste, .trapCeleste {
-    animation: celeste 5s ease ;
+#recCeleste, #trapCeleste {
+    animation: celeste 3s ease-in;
     animation-iteration-count:1 ;
 }
 @keyframes celeste{
@@ -125,7 +116,7 @@ main{
 .itemMenu{
     list-style-type: none;  
 }
-.itemLink{
+.itemLink, .botonesPlayPause, .botonReinicio{
     background-color: rgb(240, 245, 228);
     color:rgb(21, 68, 84);
     font-weight: 300;
@@ -189,8 +180,8 @@ footer{
 }
 .logo{
     width: 110px;
-    height: 100px;
-    padding-left: 50px;
+    height: 80px;
+    padding-left: 30px;
     margin-top: 5px;
 }
 .footerPeH{
@@ -213,7 +204,7 @@ footer{
     padding-left: 60px;
 }
 
-.contenedorHistoria{
+.contenedorHistoria, .contenedorVideo{
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -228,10 +219,6 @@ footer{
 }
 /* ---------- sección video -------------*/
 .contenedorVideo{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    flex-direction: column;
     padding: 70px;
 }
 
@@ -257,15 +244,6 @@ footer{
     height: 40px;
 }
 
-.botonesPlayPause{
-    background-color: rgb(240, 245, 228);
-    color:rgb(21, 68, 84);
-    font-weight: 300;
-    text-decoration: none;
-    box-shadow: 2px 3px rgb(21, 68, 84);
-    border-radius: 10px;
-    padding: 10px;
-}
 .botonesPlayPause:active{
      box-shadow: 0px 0px darkgray;
      transform: translate(3px, 2px);
@@ -310,14 +288,9 @@ footer{
 .botonReinicio{
     display: flex;
     margin: auto;
-    background-color: rgb(240, 245, 228);
-    color:rgb(21, 68, 84);
-    font-weight: 300;
-    text-decoration: none;
-    box-shadow: 2px 3px rgb(21, 68, 84);
-    border-radius: 10px;
     padding: 10px 100px;
 }
+
 .botonReinicio:active{
     box-shadow: 0px 0px darkgray;
     transform: translate(3px, 2px);
