@@ -263,7 +263,7 @@ footer{
 .cajas{
     display: flex;
     flex-direction: row;
-    gap: 5px
+    gap: 3px
 }
 #cajasoltar1,#cajasoltar2,#cajasoltar3{
     display: flex;
@@ -277,7 +277,7 @@ footer{
 #cajaimagenes{
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 5px;
     margin: 40px;
 }
 #imagen1,#imagen2,#imagen3{

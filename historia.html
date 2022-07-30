@@ -53,7 +53,7 @@
     <article class="contenedorVideo">
         <h2>Un breve video para complementar lo visto</h2>
         <section class="ventanaVideo">
-            <video id="miVideo" poster="./assets/imagenes/img-video.jpg" width="100%" >
+            <video id="miVideo" preload="metadata" poster="./assets/imagenes/img-video.jpg" width="100%" >
                 <source src="./assets/video/historia-Comp.mp4" type="video/mp4">
                 <source src="./assets/video/historia-Comp.ogv" type="video/ogv">
             </video>
@@ -64,7 +64,7 @@
                     <button class="botonesPlayPause" id="pause"><img src="./assets/imagenes/pausa.svg" alt="Boton PAUSE"></button>
                     
                 </div >
-                <div class="duracionVideo">Duración video:</div>
+                <div id="duracionVideo">Duración video:</div>
             </div>
 
         </section>
